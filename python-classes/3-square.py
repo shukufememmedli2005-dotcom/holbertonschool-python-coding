@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module that defines a Square class with size validation, area, and printing."""
+"""Module that defines a Square class with size property, area, and printing."""
 
 
 class Square:
@@ -27,7 +27,7 @@ class Square:
         return self.__size ** 2
 
     def my_print(self):
-        """Print the square with the character #."""
+        """Print the square with the character #, or empty line if size is 0."""
         if self.__size == 0:
             print()
             return
